@@ -26,7 +26,7 @@ RUN apt-get -qq -y install libmp3lame-dev
 RUN apt-get -qq -y install libogg-dev
 RUN apt-get -qq -y install libvorbis-dev
 RUN apt-get -qq -y install libopus-dev
-RUN apt-get -qq -y install libfdkaac-ocaml-dev 
+RUN apt-get -qq -y install libfdk-aac-dev 
 
 ADD liquidsoap-1.1.1-full.tar.gz /usr/local/liquidsoap
 COPY PACKAGES /usr/local/liquidsoap/liquidsoap-1.1.1-full/PACKAGES
@@ -42,13 +42,6 @@ WORKDIR /
 RUN mkdir -p /var/log/liquidsoap
 RUN chown -R liquidsoap /var/log/liquidsoap
 RUN mkdir -p /etc/liquidsoap
-#RUN chown -R liquidsoap /etc/liquidsoap
-
-#RUN apt-get -qq -y install liquidsoap
-
-# temp stuff #######################
-RUN apt-get -qq -y install mc
-####################################
 
 # clean up
 RUN apt-get clean
@@ -62,15 +55,10 @@ COPY ostseewelle-ch.liq /etc/liquidsoap/ostseewelle-ch.liq
 
 RUN chown -R liquidsoap:liquidsoap /etc/liquidsoap
 RUN chmod 600  /etc/liquidsoap/*.liq
-#RUN chown -R liquidsoap:liquidsoap /usr/share/liquidsoap
 
 COPY ./entrypoint.sh /entrypoint.sh
-#RUN chown liquidsoap:liquidsoap /entrypoint.sh
-#RUN chmod 700 /entrypoint.sh
-
-
-ENV IC_SOURCE_PASS=myicsourcepass
-ENV IC_PORT=8000
+RUN chown liquidsoap:liquidsoap /entrypoint.sh
+RUN chmod 700 /entrypoint.sh
 
 USER liquidsoap:liquidsoap
 
