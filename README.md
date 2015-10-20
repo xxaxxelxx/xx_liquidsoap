@@ -8,7 +8,13 @@ This repo is the base for an [automated docker build](https://hub.docker.com/r/x
 The running docker container provides a preconfigured Liquidsoap for very special streaming purposes usable for a distributed architecture.
 It presumably will not fit for you, but it is possible to tune it. If you need some additional information, feel free to ask.
 
-The [xxaxxelxx/xx_liquidsoap](https://hub.docker.com/r/xxaxxelxx/xx_liquidsoap/) repo is an essential part of a compound.
+The [xxaxxelxx/xx_liquidsoap](https://hub.docker.com/r/xxaxxelxx/xx_liquidsoap/) repo is an essential part of a complex compound used for streaming.
+
+
+## Compound elements
+ [xxaxxelxx/xx_bridgehead](https://hub.docker.com/r/xxaxxelxx/xx_bridgehead/)
+ [xxaxxelxx/xx_icecast](https://hub.docker.com/r/xxaxxelxx/xx_icecast/)
+ **[xxaxxelxx/xx_liquidsoap](https://hub.docker.com/r/xxaxxelxx/xx_liquidsoap/)**
 
 
 
