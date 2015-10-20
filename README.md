@@ -11,7 +11,7 @@ It presumably will not fit for you, but it is possible to tune it. If you need s
 The [xxaxxelxx/xx_liquidsoap](https://hub.docker.com/r/xxaxxelxx/xx_liquidsoap/) repo is an essential part of a complex compound used for streaming.
 It's main purpose is the parallel transcoding of a master stream received from a *xx_icecast* docker container into different formats and sending them back.
 
-**xx_liquidsoap** docker images are build from [liquidsoap-1.1.1 sources] (http://sourceforge.net/projects/savonet/files/)
+**xx_liquidsoap** docker images are build from [liquidsoap-1.1.1 sources](http://sourceforge.net/projects/savonet/files/)
 
 ## Supported formats
 * MP3
