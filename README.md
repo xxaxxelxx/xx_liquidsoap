@@ -1,6 +1,6 @@
 # Liquidsoap for use with Docker
 
-[xxaxxelxx/xx_Liquidsoap](https://index.docker.io/u/xxaxxelxx/xx_Liquidsoap/)
+[xxaxxelxx/xx_Liquidsoap](https://index.docker.io/u/xxaxxelxx/xx_liquidsoap/)
 
 ## Synopsis
 This repo is the base for an [automated docker build](https://hub.docker.com/r/xxaxxelxx/xx_Liquidsoap/).
@@ -8,7 +8,17 @@ This repo is the base for an [automated docker build](https://hub.docker.com/r/x
 The running docker container provides a preconfigured Liquidsoap for very special streaming purposes usable for a distributed architecture.
 It presumably will not fit for you, but it is possible to tune it. If you need some additional information, feel free to ask.
 
+The [xxaxxelxx/xx_liquidsoap](https://hub.docker.com/r/xxaxxelxx/xx_liquidsoap/) repo is an essential part of a compound.
+
+
+
+
 ## Usage
+
+
+
+
+
 
 It supports three modes.
 
