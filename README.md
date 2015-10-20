@@ -25,7 +25,7 @@ It's main purpose is the parallel transcoding of a master stream received from a
 **[xxaxxelxx/xx_liquidsoap](https://index.docker.io/u/xxaxxelxx/xx_liquidsoap/)**
 
 ## Usage
-The container runs as user liquidsoap and dis not expose any ports.
+The container runs as user liquidsoap and does not expose any ports.
 
 ### Run it
 ```bash
@@ -33,11 +33,6 @@ $ docker run -d --name mycontainername_myradio --link ICECAST_PLAYER_CONTAINER:A
 ```
 ***
 
-
-
-
 ## License
 
 [MIT](https://github.com/xxaxxelxx/xx_Liquidsoap/blob/master/LICENSE.md)
-
-
