@@ -29,7 +29,7 @@ The container runs as user liquidsoap and dis not expose any ports.
 
 ### Run it
 ```bash
-$ docker run -d --name mycontainername_myradio --link ICECAST_PLAYER_CONTAINER:ALIAS xxaxxelxx/xx_Liquidsoap myradio
+$ docker run -d --name mycontainername_myradio --link ICECAST_PLAYER_CONTAINER:ALIAS xxaxxelxx/xx_liquidsoap myradio
 ```
 ***
 
