@@ -32,15 +32,15 @@ esac
 # mode section
 if [ $MODE = "BBR" ]; then
     test -r /etc/liquidsoap/bbradio.liq && cp -f /etc/liquidsoap/bbradio.liq /etc/liquidsoap/liquidsoap.liq
-elif [ $MODE = "BBR-CH" ]; then
+elif [ $MODE = "BBRCH" ]; then
     test -r /etc/liquidsoap/bbradio.liq && cp -f /etc/liquidsoap/bbradio-ch.liq /etc/liquidsoap/liquidsoap.liq
 elif [ $MODE = "TDY" ]; then
     test -r /etc/liquidsoap/radioteddy.liq && cp -f /etc/liquidsoap/radioteddy.liq /etc/liquidsoap/liquidsoap.liq
-elif [ $MODE = "TDY-CH" ]; then
+elif [ $MODE = "TDYCH" ]; then
     test -r /etc/liquidsoap/radioteddy-ch.liq && cp -f /etc/liquidsoap/radioteddy-ch.liq /etc/liquidsoap/liquidsoap.liq
 elif [ $MODE = "OW" ]; then
     test -r /etc/liquidsoap/ostseewelle.liq && cp -f /etc/liquidsoap/ostseewelle.liq /etc/liquidsoap/liquidsoap.liq
-elif [ $MODE = "OW-CH" ]; then
+elif [ $MODE = "OWCH" ]; then
     test -r /etc/liquidsoap/ostseewelle-ch.liq && cp -f /etc/liquidsoap/ostseewelle-ch.liq /etc/liquidsoap/liquidsoap.liq
 fi
 
