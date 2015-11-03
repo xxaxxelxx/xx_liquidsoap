@@ -3,7 +3,7 @@
 [xxaxxelxx/xx_Liquidsoap](https://index.docker.io/u/xxaxxelxx/xx_liquidsoap/)
 
 ## Synopsis
-This repo is the base for an [automated docker build](https://hub.docker.com/r/xxaxxelxx/xx_Liquidsoap/).
+This repo is the base for an [automated docker build](https://hub.docker.com/r/xxaxxelxx/xx_liquidsoap/).
 
 The running docker container provides a preconfigured Liquidsoap for very special streaming purposes usable for a distributed architecture.
 It presumably will not fit for you, but it is possible to tune it. If you need some additional information, feel free to ask.
