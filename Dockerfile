@@ -46,12 +46,13 @@ RUN mkdir -p /etc/liquidsoap
 # clean up
 RUN apt-get clean
 
-COPY bbradio.liq /etc/liquidsoap/bbradio.liq
-COPY bbradio-ch.liq /etc/liquidsoap/bbradio-ch.liq
-COPY radioteddy.liq /etc/liquidsoap/radioteddy.liq
-COPY radioteddy-ch.liq /etc/liquidsoap/radioteddy-ch.liq
-COPY ostseewelle.liq /etc/liquidsoap/ostseewelle.liq
-COPY ostseewelle-ch.liq /etc/liquidsoap/ostseewelle-ch.liq
+COPY *.liq /etc/liquidsoap/
+#COPY bbradio.liq /etc/liquidsoap/bbradio.liq
+#COPY bbradio-ch.liq /etc/liquidsoap/bbradio-ch.liq
+#COPY radioteddy.liq /etc/liquidsoap/radioteddy.liq
+#COPY radioteddy-ch.liq /etc/liquidsoap/radioteddy-ch.liq
+#COPY ostseewelle.liq /etc/liquidsoap/ostseewelle.liq
+#COPY ostseewelle-ch.liq /etc/liquidsoap/ostseewelle-ch.liq
 
 RUN chown -R liquidsoap:liquidsoap /etc/liquidsoap
 RUN chmod 600  /etc/liquidsoap/*.liq
