@@ -3,7 +3,7 @@
 #######################################################################################################################################
 id="radioteddy"
 c_id="#{id}-ch07"
-set("log.file.path","/var/log/liquidsoap/#{c_id}.log")
+#set("log.file.path","/var/log/liquidsoap/#{c_id}.log")
 c_name="Radio TEDDY"
 c_desc="Macht Spass! Macht schlau!"
 c_host="IC_HOST"
@@ -21,7 +21,7 @@ input = mksafe(input.http(url))
 # MP3 128 STEREO
 output.icecast(
   %mp3(samplerate=44100, internal_quality=2, bitrate=128, stereo=true),
-  mount="/#{c_id}.mp3",
+  mount="/intro.#{c_id}.mp3",
   name=c_name,
   url=c_url,
   description=c_desc,
@@ -32,7 +32,7 @@ output.icecast(
 # HE-AAC v2
 output.icecast(
   %fdkaac(channels=2, samplerate=44100, aot="mpeg2_he_aac_v2", transmux="adts", sbr_mode=false, bitrate=48),
-  mount="/#{c_id}.aac",
+  mount="/intro.#{c_id}.aac",
   name=c_name,
   url=c_url,
   description=c_desc,

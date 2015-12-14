@@ -13,12 +13,12 @@ c_url="http://www.#{c_id}.de"
 
 url = "http://#{c_host}:#{c_port}/#{c_id_short}_master.mp3"
 input = mksafe(input.http(url))
-set("log.file.path","/var/log/liquidsoap/#{c_id}.log")
+#set("log.file.path","/var/log/liquidsoap/#{c_id}.log")
 
 # MP3 128 STEREO
 output.icecast(
   %mp3(samplerate=44100, internal_quality=2, bitrate=128, stereo=true),
-  mount="/#{c_id}.mp3",
+  mount="/intro.#{c_id}.mp3",
   name=c_name,
   url=c_url,
   description=c_desc,
@@ -29,7 +29,7 @@ output.icecast(
 # MP3 64 MONO
 output.icecast(
   %mp3(samplerate=44100, internal_quality=2, bitrate=64, stereo=false),
-  mount="/#{c_id}-mobile.mp3",
+  mount="/intro.#{c_id}-mobile.mp3",
   name=c_name,
   url=c_url,
   description=c_desc,
@@ -44,7 +44,7 @@ output.icecast(
 #  %vorbis(samplerate=44100, channels=2, quality=0.9),
 #  %vorbis.abr(samplerate=44100, channels=2, bitrate=128, max_bitrate=192, min_bitrate=64),
 #  %vorbis.cbr(samplerate=44100, channels=2, bitrate=128),
-  mount="/#{c_id}.ogg",
+  mount="/intro.#{c_id}.ogg",
   name=c_name,
   url=c_url,
   description=c_desc,
@@ -56,7 +56,7 @@ output.icecast(
 output.icecast(
   %opus,
 #  %opus(bitrate=64),      
-  mount="/#{c_id}.opus",
+  mount="/intro.#{c_id}.opus",
   name=c_name,
   url=c_url,
   description=c_desc,
@@ -67,7 +67,7 @@ output.icecast(
 # HE-AAC v2
 output.icecast(
   %fdkaac(channels=2, samplerate=44100, aot="mpeg2_he_aac_v2", transmux="adts", sbr_mode=false, bitrate=48),
-  mount="/#{c_id}.aac",
+  mount="/intro.#{c_id}.aac",
   name=c_name,
   url=c_url,
   description=c_desc,
