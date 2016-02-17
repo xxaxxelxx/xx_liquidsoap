@@ -1,4 +1,4 @@
-# ***liquidsoap***
+# ***LIQUIDSOAP***
 # Stream transcoding module
 # Part of Dockerized Distributed Streaming System
 
